@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Pulse | Impulsando negocios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand"><img src="/images/dev-icon.svg" alt="Code Pulse" class="nav-logo"></div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-item active">Home</a></li>
+            <li><a href="#about" class="nav-item">About</a></li>
+            <li><a href="#projects" class="nav-item">Projects</a></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <img src="/images/dev-icon.svg" alt="Logo" class="hero-logo fade-in">
+        <h1 class="hero-title fade-in">Code <span class="gradient-text">Pulse</span></h1>
+        <p class="hero-subtitle fade-in">Impulsando negocios con tecnología.</p>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">Nuestra <span class="gradient-text">Esencia</span></h2>
+        <div class="about-box fade-in">
+            <div class="about-text">
+                <p>En <strong>Code Pulse</strong>, transformamos la complejidad en soluciones digitales elegantes. Somos un equipo especializado en crear el "latido" tecnológico para negocios y dar un paso grande al mundo moderno.</p>
+                <p>Nuestra misión es la excelencia técnica, garantizando productos escalables, seguros y con una experiencia de usuario que marca la diferencia en el mercado.</p>
+            </div>
+            <div style="background: var(--glass); padding: 30px; border-radius: 25px; border: 1px solid var(--glass-border);">
+                <h3 class="gradient-text" style="margin-bottom:15px;">¿Qué nos define?</h3>
+                <p style="color: var(--text-dim); font-size: 0.9rem;">+ Innovación constante<br>+ Arquitectura Limpia<br>+ Compromiso Total</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <h2 class="section-title">El <span class="gradient-text">Equipo</span></h2>
+        <div class="team-grid">
+            <div class="team-card fade-in">
+                <img src="ruta/a/robinson.jpg" alt="Robinson" class="profile-img">
+                <h4>Robinson A. Gonzalez</h4>
+                <p class="team-role">Full Stack Developer & CEO</p>
+                <div class="social-group">
+                    <a href="https://www.linkedin.com/in/andres-gonzalez444/" class="btn-social btn-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/AndresGonzalezDev444" class="btn-social btn-github"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://andresgonzalezdev.netlify.app/" class="btn-social btn-portfolio"><i class="fas fa-briefcase"></i> Portfolio</a>
+                </div>
+                <div class="tech-stack">
+                    <i class="devicon-react-original"></i> <i class="devicon-python-plain"></i> <i class="devicon-csharp-plain"></i> <i class="devicon-java-plain"></i> <i class="devicon-linux-plain"></i>
+                </div>
+            </div>
+
+            <div class="team-card fade-in">
+                <img src="ruta/a/dev2.jpg" alt="Dev 2" class="profile-img">
+                <h4>Andrés F. Castaño</h4>
+                <p class="team-role">Backend Developer</p>
+                <div class="social-group">
+                    <a href="#" class="btn-social btn-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+                <div class="tech-stack">
+                    <i class="devicon-nodejs-plain"></i> <i class="devicon-docker-plain"></i> <i class="devicon-mongodb-plain"></i>
+                </div>
+            </div>
+
+            <div class="team-card fade-in">
+                <img src="ruta/a/dev3.jpg" alt="Dev 3" class="profile-img">
+                <h4>Jhoan S. Bustos</h4>
+                <p class="team-role">Backend Developer</p>
+                <div class="social-group">
+                    <a href="#" class="btn-social btn-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+                <div class="tech-stack">
+                    <i class="devicon-figma-plain"></i> <i class="devicon-sass-original"></i>
+                </div>
+            </div>
+
+            <div class="team-card fade-in">
+                <img src="ruta/a/dev4.jpg" alt="Dev 4" class="profile-img">
+                <h4>Juan C. Tonusco</h4>
+                <p class="team-role">Database Administrator</p>
+                <div class="social-group">
+                    <a href="#" class="btn-social btn-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+                <div class="tech-stack">
+                    <i class="devicon-flutter-plain"></i> <i class="devicon-apple-original"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Proyectos <span class="gradient-text">Destacados</span></h2>
+        <div class="projects-grid" id="projects-container"></div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Hablemos de <span class="gradient-text">Negocios</span></h2>
+        <div class="contact-container fade-in">
+            <form class="contact-form">
+                <input type="text" placeholder="Tu Nombre" required>
+                <input type="email" placeholder="Tu Email" required>
+                <textarea rows="5" placeholder="¿Cómo podemos ayudarte?"></textarea>
+                <button type="submit" class="btn-submit">Enviar Propuesta</button>
+            </form>
+        </div>
+    </section>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+<script src="/js/script.js"></script>
+</body>
+</html>
