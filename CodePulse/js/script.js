@@ -1,18 +1,18 @@
         const misProyectos = [
             {
                 id: 1,
-                titulo: "Pulse E-Commerce",
-                descripcion: "Plataforma de ventas masivas con panel de administración y analíticas en tiempo real.",
-                imagenes: ["img1.jpg", "img2.jpg"],
-                techs: ["fab fa-react", "fab fa-node-js", "fas fa-database"],
+                titulo: "Don Karlos - Software",
+                descripcion: "Software con panel de administración, inicio por credenciales, base de datos y analíticas en tiempo real.",
+                imagenes: ["/images/donkarlos-1.png", "/images/donkarlos-2.png", "/images/donkarlos-3.png"],
+                techs: ["fab fa-java", "fas fa-database"],
                 link: "#"
             },
             {
                 id: 2,
-                titulo: "Security Auditor",
-                descripcion: "Software de escaneo de vulnerabilidades para redes empresariales internas.",
-                imagenes: ["img3.jpg", "img4.jpg"],
-                techs: ["fab fa-python", "fas fa-shield-alt", "fab fa-linux"],
+                titulo: "Consultex",
+                descripcion: "Aplicación Web con interacción cliente-servidor, con base de datos, autenticación y análisis de datos en tiempo real.",
+                imagenes: ["/images/consultex-1.png", "/images/consultex-2.png"],
+                techs: ["fab fa-html5", "fab fa-css3", "fab fa-js", "fas fa-database", "fab fa-java"],
                 link: "#"
             }
         ];
@@ -63,3 +63,35 @@
             entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('visible'); });
         }, { threshold: 0.1 });
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-item");
+
+window.addEventListener("scroll", () => {
+
+    let currentSection = "";
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop - 120;
+        const sectionHeight = section.clientHeight;
+
+        if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+            currentSection = section.getAttribute("id");
+        }
+
+    });
+
+    navLinks.forEach(link => {
+
+        link.classList.remove("active");
+
+        const href = link.getAttribute("href").replace("#", "");
+
+        if (href === currentSection) {
+            link.classList.add("active");
+        }
+
+    });
+
+});
